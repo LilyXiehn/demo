@@ -333,11 +333,21 @@
     <div id="hzjkm"><div class="hz" style="color: #55b957">健康码为 绿码</div></div>
 
 
-    <div id="dateTime"><div class="time"><script type="text/javascript">
+    <!--<div id="dateTime"><div class="time"><script type="text/javascript">
         var myDate = new Date();
         var myMonth = myDate.getMonth() + 1;
         var myDay = myDate.getDate();
         document.write("同步时间：2020" + "-" + p(myMonth) + "-" + p(myDay) + " 08:52:48")
+        </script></div></div>-->
+
+    <div id="dateTime"><div class="time"><script type="text/javascript">
+        var myDate = new Date();
+        var myMonth = myDate.getMonth() + 1;
+        var myDay = myDate.getDate();
+        var myHour = myDate.getHours();//时
+        var myMinutes = myDate.getMinutes(); //分
+        var mySeconds = myDate.getSeconds(); //秒
+        document.write("同步时间：2020" + "-" + p(myMonth) + "-" + p(myDay) + " " + p(myHour-2) + ":" +p(myMinutes-18) +":" + p(mySeconds-32))
         </script></div></div>
     
         <p class="tip" style="margin-top: 10px;">凭蓝码可在浙江大学校园内通行<br>请主动出示，配合检查</p>
